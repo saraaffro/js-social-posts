@@ -140,6 +140,22 @@ likeButtons.forEach(button => {
             likes++;
             // scrivo effettivamente il like aggiunto
             likeCounter.textContent = likes;
+        } else {
+                
+                const likeButtonLabel = button.querySelector(".like-button__label");
+                const likeButtonIcon = button.querySelector(".like-button__icon");
+    
+                // Cambia il colore del testo e dell'icona like
+                likeButtonLabel.textContent = "Mi Piace";
+                likeButtonLabel.classList.remove("like-button--liked");
+                likeButtonIcon.classList.remove("like-button--liked");
+    
+                // decrementa il contatore dei like
+                let likes = likeCounter.textContent;
+                // tolgo un like
+                likes--;
+                // scrivo effettivamente il like rimosso
+                likeCounter.textContent = likes;
         }
     });
 });
