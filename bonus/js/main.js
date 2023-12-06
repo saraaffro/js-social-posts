@@ -151,7 +151,7 @@ likeButtons.forEach(button => {
                 likeButtonIcon.classList.remove("like-button--liked");
     
                 // decrementa il contatore dei like
-                let likes = likeCounter.textContent;
+                let likes = parseInt(likeCounter.textContent);
                 // tolgo un like
                 likes--;
                 // scrivo effettivamente il like rimosso

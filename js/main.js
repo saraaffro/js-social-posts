@@ -135,7 +135,7 @@ likeButtons.forEach(button => {
             likeButtonIcon.classList.add("like-button--liked");
 
             // Incrementa il contatore dei like
-            let likes = likeCounter.textContent;
+            let likes = parseInt(likeCounter.textContent);
             // aggiungo un like
             likes++;
             // scrivo effettivamente il like aggiunto
